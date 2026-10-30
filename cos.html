@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Nazwa</th>
+            <th>Netto</th>
+            <th>Brutto</th>
+            <th>Ilość</th>
+            <th>Wartość</th>
+        </tr>
+        <tr>
+            <td><?= $opis?></td>
+            <td><?= number_format($netto, 2, ',', ' ') . " zł" ?></td>
+            <td><?= number_format($brutto, 2, ',', ' ') . " zł" ?></td>
+            <td><?= $ilosc?></td>
+            <td><?= number_format($wszystko, 2, ',', ' ') . " zł" ?></td>
+        </tr>
+    </table>
+</body>
+</html>
